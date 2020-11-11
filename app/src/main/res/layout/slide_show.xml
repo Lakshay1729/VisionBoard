@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+
+    android:background="?attr/backgroundcolor"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="9dp"
+        android:layout_marginTop="40dp"
+        style="@style/cart_dialog"
+        android:elevation="24dp"
+        app:cardElevation="22dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp">
+
+            <ImageView
+                android:id="@+id/image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_15" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:paddingTop="@dimen/spacing_medium"
+                android:text="TRAVEL"
+                android:id="@+id/pend"
+                android:textAllCaps="true"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/image"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginLeft="@dimen/spacing_xlarge"-->
+                <!--android:layout_marginRight="@dimen/spacing_xlarge"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="@dimen/spacing_xlarge"-->
+                <!--android:src="@drawable/img_wizard_1"-->
+                <!--android:tint="@android:color/white" />-->
+
+                <!--<com.balysv.materialripple.MaterialRippleLayout-->
+                <!--style="@style/RippleStyleWhite"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/spacing_middle">-->
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_next"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@color/light_green_600"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Next"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+                <!--android:textColor="@android:color/white" />-->
+
+                <!--</com.balysv.materialripple.MaterialRippleLayout>-->
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="?attr/cardBackground"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:outlineSpotShadowColor="@color/grey_20">
+
+            <!--<ImageButton-->
+            <!--android:layout_width="?attr/actionBarSize"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+            <!--android:tint="@color/grey_400"-->
+            <!--app:srcCompat="@drawable/ic_favorites" />-->
+
+
+            <!--<ImageButton-->
+            <!--android:layout_width="?attr/actionBarSize"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+            <!--android:tint="@color/grey_400"-->
+            <!--app:srcCompat="@drawable/ic_bookmark" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="@dimen/spacing_medium">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:fontFamily="sans-serif"
+                    android:text="Aliquet Et Ante"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="sans-serif"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Aliquet Et Ante"
+                    android:textAllCaps="true"
+                    android:textColor="?attr/textColor"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/share_button"-->
+                <!--android:layout_width="?attr/actionBarSize"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:tint="@color/grey_400"-->
+                <!--app:srcCompat="@drawable/ic_share" />-->
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

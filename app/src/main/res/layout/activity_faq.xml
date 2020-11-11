@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/card_activity"
+    tools:context=".FAQActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+   android:id="@+id/faq"
+    android:layout_marginTop="18dp"
+
+    android:fontFamily="@font/aref_ruqaa"
+    android:text="FAQs"
+    android:textColor="?attr/textColor"
+    android:textSize="28dp"/>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/faq"
+
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+
+        />
+
+</RelativeLayout>

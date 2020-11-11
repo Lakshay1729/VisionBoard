@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:orientation="vertical"
+    android:id="@+id/lyt_parent1"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        android:src="?attr/headerimage" />
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+
+        <!--android:layout_width="64dp"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:id="@+id/avatar"-->
+
+        <!--android:src="@drawable/ic_person"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--app:civ_shadow="true"-->
+        <!--android:elevation="30dp"-->
+        <!--app:civ_shadow_radius="0"-->
+        <!--app:civ_border_width="2dp" />-->
+    <!--&lt;!&ndash;android:layout_margin="@dimen/spacing_large"&ndash;&gt;-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/spacing_large"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/spacing_medium"
+android:fontFamily="@font/alice"
+            android:paddingLeft="5dp"
+            android:text="Vision Board"
+            android:textColor="@color/white"
+            android:textSize="29dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:fontFamily="@font/aref_ruqaa"
+            android:paddingLeft="5dp"
+            android:text="v1.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/yellow_50"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:id="@+id/library"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:src="@drawable/library"-->
+        <!--android:layout_marginRight="40dp"/>-->
+</RelativeLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="@dimen/spacing_medium"-->
+            <!--android:paddingTop="@dimen/spacing_large">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="1.5 K"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/spacing_medium"-->
+                    <!--android:text="Posts"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+                    <!--android:textColor="@color/grey_10" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView11"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="17.8 K"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/spacing_medium"-->
+                    <!--android:text="Followers"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+                    <!--android:textColor="@color/grey_10" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView12"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="1.3 K"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView13"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/spacing_medium"-->
+                    <!--android:text="Following"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+                    <!--android:textColor="@color/grey_10" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->

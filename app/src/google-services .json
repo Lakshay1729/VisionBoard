@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245262918036",
+    "firebase_url": "https://vision-board-e6593.firebaseio.com",
+    "project_id": "vision-board-e6593",
+    "storage_bucket": "vision-board-e6593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245262918036:android:443953cfa51d3e15",
+        "android_client_info": {
+          "package_name": "com.heartmeetsoul.visionboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245262918036-mj1oaovtfugavukm8tfnlt0621fvg1dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwm8LM4eVN-Px1CltYZx882hrghmeCiMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245262918036-mj1oaovtfugavukm8tfnlt0621fvg1dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

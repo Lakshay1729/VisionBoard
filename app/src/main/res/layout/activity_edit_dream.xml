@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/backgroundcolor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyt_dream"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp">-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:id="@+id/editperson"
+
+                android:src="?attr/addpic" />
+
+
+            <!--</RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="@dimen/spacing_smlarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="?attr/textColor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:textColorHint="?attr/hintcolor"
+                        android:background="@android:color/transparent"
+                        android:hint="Write title"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="?attr/textColor" >
+                        <requestFocus />
+                    </EditText>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mic"
+                        android:tint="?attr/tintColor"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_mic"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_smlarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dream Tag(s)"
+                    android:textColor="?attr/textColor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <!--<com.hootsuite.nachos.NachoTextView-->
+                    <!--android:id="@+id/et_tag"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/spacing_middle"-->
+                    <!--android:hint="Add Tags"-->
+                    <!--android:background="@android:color/transparent">-->
+
+                    <!--<requestFocus />-->
+
+                <!--</com.hootsuite.nachos.NachoTextView>-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    >
+
+                    <EditText
+                        android:id="@+id/tags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="?attr/hintcolor"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="?attr/textColor"  />
+
+                    <Spinner
+                        android:id="@+id/tags_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_smlarge">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="?attr/textColor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:background="@android:color/transparent"
+                        android:hint="Write description"
+                        android:inputType="textMultiLine"
+                        android:minHeight="?attr/actionBarSize"
+                        android:overScrollMode="always"
+                        android:textColorHint="?attr/hintcolor"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="?attr/textColor" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mic1"
+                        android:layout_alignParentRight="true"
+                        android:tint="?attr/tintColor"
+                        android:src="@drawable/ic_mic"
+                        />
+                </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_marginTop="20dp"
+                android:textColor="?attr/textColor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Expected End Date"
+                    android:textColorHint="?attr/hintcolor"
+                    android:minHeight="?attr/actionBarSize"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="?attr/textColor"  />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/date_picker"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/calendar"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/pending"
+            android:textColor="?attr/textColor"
+            android:background="?attr/buttonColor"
+            android:text="Pending"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Completed"
+            android:textColor="?attr/textColor"
+            android:background="?attr/buttonColor"
+            android:id="@+id/completed"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_smlarge"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="?attr/tintColor"
+        app:backgroundTint="@color/light_blue_600"
+        app:fabSize="normal"
+        app:layout_anchor="@id/editperson"
+        app:layout_anchorGravity="right|bottom|end"
+        android:onClick="Camera"
+        app:elevation="3dp"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_photo_camera" />
+
+
+</LinearLayout>

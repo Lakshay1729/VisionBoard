@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_1000"
+
+      android:id="@+id/fingery"
+    tools:context="com.heartmeetsoul.visionboard.FingerPrintLock">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--android:layout_marginTop="-10dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/app"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textColor="#efefef"-->
+                <!--android:text="@string/app_name"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />-->
+
+            <!--<View-->
+                <!--android:id="@+id/mid-parent"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_centerInParent="true">-->
+
+            <!--</View>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_below="@+id/app"-->
+
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+
+                <!--app:srcCompat="@drawable/fingerprint" />-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:text="Enter Your four digit pin"-->
+                <!--android:textColor="#efefef"-->
+                <!--android:textSize="19dp"-->
+                <!--android:id="@+id/enter"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_below="@+id/imageView"/>-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/textview"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_below="@+id/enter"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:fontFamily="serif"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#efefef"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="18dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="15dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="normal" />&ndash;&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/layout_dots"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/enter">-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="390dp"-->
+                <!--android:layout_below="@id/layout_dots"-->
+
+                <!--android:layout_marginLeft="15dp"-->
+
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="15dp"-->
+
+                <!--android:paddingHorizontal="40dp"-->
+                <!--android:paddingTop="30dp">-->
+
+                <!--<View-->
+                    <!--android:id="@+id/mid-mid-parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_centerInParent="true"-->
+
+                    <!--&gt;-->
+
+                <!--</View>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t1"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="1"-->
+                    <!--android:textFontWeight="10"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t2"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="2"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp">-->
+
+                <!--</TextView>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t3"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="3"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp">-->
+
+                <!--</TextView>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t5"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="100dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="5"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp">-->
+
+                <!--</TextView>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t4"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginTop="100dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="4"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp">-->
+
+                <!--</TextView>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t6"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginTop="100dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="6"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t7"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginTop="200dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:text="7"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t0"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="300dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="#efefef"-->
+
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp" />-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/backscape"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/t9"-->
+                    <!--android:layout_alignParentRight="true"-->
+
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="43dp"-->
+                    <!--android:src="@drawable/backscape" />-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/done"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/t9"-->
+                    <!--android:layout_alignParentLeft="true"-->
+
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="43dp"-->
+                    <!--android:src="@drawable/done1" />-->
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t9"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginTop="200dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="9"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp">-->
+
+                <!--</TextView>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/t8"-->
+                    <!--android:layout_width="50dp"-->
+
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="200dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:text="8"-->
+                    <!--android:textColor="#efefef"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="30dp" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_below="@+id/rel"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="37dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#efefef"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/instructions" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_name2"
+        android:layout_marginTop="36dp"
+
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/andada"
+                android:maxLines="1"
+                android:id="@+id/title_text"
+                 android:layout_marginBottom="10dp"
+                android:text="Unlock Your Dreams"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        android:src="@drawable/fingerprint" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_name"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/profile_image"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="39dp">
+
+            <TextView
+
+                android:id="@+id/profile_name1"
+                android:layout_width="330dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:text="Enter Four Digit Pin"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/v1"
+        android:layout_below="@+id/indicator_dots"
+        android:layout_marginTop="6dp">
+
+    </View>
+
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_centerHorizontal="true"
+
+        app:keypadButtonSize="72dp"
+        app:keypadShowDeleteButton="true"
+        app:keypadTextColor="@color/white"
+        app:keypadTextSize="24dp" />
+
+
+</RelativeLayout>

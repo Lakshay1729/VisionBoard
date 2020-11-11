@@ -1,0 +1,197 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="backgroundcolor">#fcfcfc</item>
+        <item name="cardBackground">#ffffff</item>
+        <item name="textColor">@color/grey_800</item>
+        <item name="tintColor">@color/grey_600</item>
+        <item name="buttonColor">#2196F3</item>
+        <item name="toolbarColor">#3F84E0</item>
+        <item name="hintcolor">@color/grey_600</item>
+        <item name="headerimage">@drawable/material_bg_1</item>
+        <item name="android:dialogTheme">@style/Dialog.Theme</item>
+        <item name="addpic">@drawable/landscape</item>
+        <item name="add_expandable">@drawable/ic_add1</item>
+        <item name="dividercolor">@color/grey_20</item>
+        <item name="card_activity">@color/grey_300</item>
+    </style>
+
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey_700</item>
+        <item name="colorPrimaryDark">@color/grey_600</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColor">#ffffff</item>
+        <item name="hintcolor">@color/grey_10</item>
+        <item name="cardBackground">#424242</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="windowActionBar">false</item>
+        <item name="headerimage">@drawable/headerimage</item>
+        <item name="toolbarColor">#010101</item>
+        <item name="tintColor">#ffffff</item>
+        <item name="buttonColor">#2196F3</item>
+        <item name="dividercolor">@color/grey_800</item>
+        <item name="addpic">@drawable/add_image</item>
+        <item name="add_expandable">@drawable/ic_add</item>
+        <item name="android:dialogTheme">@style/Dialog.ThemeDark</item>
+        <item name="card_activity">@color/grey_900</item>
+
+
+    </style>
+    <style name="Dialog.Theme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/grey_10</item>
+        <item name="colorPrimaryDark">@color/grey_100</item>
+        <item name="colorAccent">@color/light_blue_600</item>
+        <item name="textColor">@color/blue_A200</item>
+
+        <item name="android:background">@color/grey_10</item>
+        <item name="borderlessButtonStyle">@style/Button.Accent.Borderless.WhiteText</item>
+    </style>
+
+    <style name="Dialog.ThemeDark" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/grey_10</item>
+        <item name="colorPrimaryDark">@color/grey_100</item>
+        <item name="colorAccent">@color/light_blue_600</item>
+        <item name="textColor">@color/blue_A200</item>
+        <item name="android:background">@color/grey_800</item>
+        <item name="borderlessButtonStyle">@style/Button.Accent.Borderless.WhiteText</item>
+
+
+    </style>
+    <style name="buttonstyleDialog" parent="DreActivityThemeDark">
+        <item name="cardBackground">@color/white</item>
+        <item name="textColor">@color/blue_grey_500</item>
+
+    </style>
+<style name="LoginTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+
+    <item name="colorPrimary">@color/light_blue_A700</item>
+    <item name="android:colorBackground">@color/mdtp_white</item>
+    <item name="android:textColor">@color/grey_700</item>
+    <item name="colorPrimaryDark">@color/light_blue_A400</item>
+    <item name="windowActionModeOverlay">true</item>
+    <item name="android:actionModeBackground">@color/blue_grey_600</item>
+
+</style>
+
+    <style parent="ThemeOverlay.AppCompat.Dark.ActionBar" name="AppTheme.AppBarOverlay"/>
+
+    <style parent="ThemeOverlay.AppCompat.Light" name="AppTheme.PopupOverlay"/>
+
+
+    -<style name="EditText">
+
+    <item name="android:singleLine">true</item>
+
+    <item name="colorControlNormal">#FFFFFF</item>
+
+    <item name="colorControlActivated">#FFFFFF</item>
+
+    <item name="android:textColorPrimary">#FFFFFF</item>
+
+    <item name="android:textSize">14sp</item>
+</style>
+
+
+    <!--<style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+
+        <!--<item name="android:colorBackground">@color/grey_700</item>-->
+        <!--<item name="android:textColor">@color/mdtp_white</item>-->
+    <!--</style>-->
+
+    <style name="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:background">@drawable/abc_spinner_textfield_background_material</item>
+        <item name="android:windowElevation">10dp</item>
+
+    </style>
+
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#7296989A</item>
+    </style>
+
+
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+    <style name="Button.Accent.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="Button.Accent.Borderless.WhiteText" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+
+    </style>
+
+
+
+    <style name="cart_dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="ActivityTheme.Primary.Base.Light" parent="Theme.AppCompat.NoActionBar">
+        <item name="textColor">@color/grey_10</item>
+        <item name="secondaryTextColor">#96F4F4F6</item>
+        <item name="cardBackground">#FFFF</item>
+        <item name="dividerColor">@color/grey_600</item>
+        <item name="iconPlaceholder">@drawable/ic_person</item>
+    </style>
+    <!-- Dark base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Dark"    parent="Theme.AppCompat.NoActionBar">
+        <item name="textColor">@color/grey_600</item>
+        <item name="secondaryTextColor">#8033343B</item>
+        <item name="cardBackground">#FFFF</item>
+        <item name="dividerColor">@color/grey_600</item>
+        <item name="iconPlaceholder">@drawable/ic_person</item>
+    </style>
+
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+
+    <style name="DreActivityThemeLight" parent="ActivityTheme.Primary.Base.Light">
+
+    </style>
+    <style name="DreActivityThemeDark" parent="ActivityTheme.Primary.Base.Dark">
+
+
+    </style>
+
+
+    <style name="FeedActivityThemeLight" parent="ActivityTheme.Primary.Base.Light">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="FeedActivityThemeDark" parent="ActivityTheme.Primary.Base.Dark">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

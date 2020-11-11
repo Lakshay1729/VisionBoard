@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    style="@style/RippleStyleBlack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:visibility="visible"
+        app:cardBackgroundColor="?attr/cardBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="TRAVEL"
+                    android:id="@+id/pend"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/shimmer_view_container1"
+                android:layout_width="match_parent"
+                android:soundEffectsEnabled="true"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:background="?attr/cardBackground"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:outlineSpotShadowColor="@color/grey_20">
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="?attr/actionBarSize"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                    <!--android:tint="@color/grey_400"-->
+                    <!--app:srcCompat="@drawable/ic_favorites" />-->
+
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="?attr/actionBarSize"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                    <!--android:tint="@color/grey_400"-->
+                    <!--app:srcCompat="@drawable/ic_bookmark" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:padding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:id="@+id/text21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Aliquet Et Ante"
+                        android:textAllCaps="true"
+                        android:textColor="?attr/textColor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/brief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text21"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="24dp"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:fontFamily="sans-serif"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Aliquet Et Ante"
+                        android:textAllCaps="true"
+                        android:textColor="?attr/textColor"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="?attr/tintColor"
+                    app:srcCompat="@drawable/ic_share" />
+
+            </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</com.balysv.materialripple.MaterialRippleLayout>

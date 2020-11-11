@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/normal"
+
+        android:title="Normal"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/emboss"
+        android:title="Emboss"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/blur"
+        android:title="Blur"
+        app:showAsAction="collapseActionView"
+        >
+
+    </item>
+    <item android:id="@+id/clear"
+        android:title="Clear"
+        app:showAsAction="ifRoom"
+        >
+
+    </item>
+    <item
+        android:id="@+id/brush"
+        android:title="Brush Stroke"
+
+        ></item>
+    <item
+        android:id="@+id/color"
+        android:title="Color Picker"
+        ></item>
+    <item
+        android:id="@+id/dream"
+        android:title="Dream Activity"
+        ></item>
+
+</menu>

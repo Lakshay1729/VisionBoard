@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group
+            android:id="@+id/grp_1"
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_activity"
+                android:icon="@drawable/dream"
+                android:title="Dreams" />
+            <!--<item-->
+                <!--android:id="@+id/grid_dream"-->
+                <!--android:title="Grid Layout"></item>-->
+            <item
+                android:id="@+id/nav_explore"
+                android:icon="@drawable/add_dream"
+                android:title="Add Dream" />
+            <!--<item-->
+                <!--android:id="@+id/nav_photos"-->
+                <!--android:icon="@drawable/reminder"-->
+                <!--android:title="Reminder" />-->
+
+            <item
+                android:id="@+id/nav_videos"
+                android:title="SlideShow"
+                android:icon="@drawable/ic_local_movies"/>
+        </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_message"
+                android:title="Settings"
+                android:icon="@drawable/ic_settings"/>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:title="About Us"
+                android:icon="@drawable/ic_info"/>
+        </group>
+
+    </menu>
+

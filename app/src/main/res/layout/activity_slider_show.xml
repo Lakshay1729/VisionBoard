@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:fitsSystemWindows="true"
+    android:id="@+id/slider"
+    android:orientation="vertical">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/view_pager"
+        android:layout_marginTop="-97dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="horizontal" />
+
+
+    <ImageButton
+        android:id="@+id/music"
+        android:clickable="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/slider_pause"
+        android:scaleType="fitXY"
+        android:background="@color/transparent"
+        android:layout_below="@id/layoutDots"
+        android:elevation="20dp"
+
+
+        />
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/mute"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="55dp"-->
+
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_below="@id/layoutDots"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:layout_toRightOf="@id/music"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@drawable/ic_music"-->
+        <!--android:elevation="18dp"-->
+       <!--&gt;-->
+
+    <!--</ImageButton>-->
+
+
+</RelativeLayout>

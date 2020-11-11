@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Vision Board</string>
+
+    <!--<string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>-->
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+
+
+    <string-array name="Tags_array">
+        <item>Travel</item>
+        <item>Career</item>
+        <item>Education</item>
+        <item>Business</item>
+        <item>Relationship</item>
+        <item>Vehicle</item>
+
+        <item>House</item>
+        <item>Add Category</item>
+    </string-array>
+    <string name="share_string">Hey there,I want to share one of my goals with you which I created on this amazing app https://www.playstore.com/com.heartmeetsoul.visionboard ,which helps me to maintain a mindset for my dreams and goals in long term.\n\nStart using Vision Board and don\'t let your dreams be,just dreams ,make them reality </string>
+
+
+    <string name="label_brush">Brush</string>
+
+    <string name="label_emoji">Emoji</string>
+
+    <string name="label_sticker">Sticker</string>
+
+    <string name="label_eraser">Eraser</string>
+
+    <string name="label_text">Text</string>
+
+    <string name="label_filter">Filter</string>
+
+    <string name="label_adjust">Adjust</string>
+
+</resources>

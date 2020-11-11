@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+    <!-- Start from size of epicenter, expand to full width/height. -->
+    <transition
+        android:duration="250" />
+
+    <!-- Quickly fade in. -->
+    <fade
+        android:duration="100"
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0" />
+</transitionSet>

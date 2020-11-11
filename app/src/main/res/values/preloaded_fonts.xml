@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abhaya_libre</item>
+        <item>@font/akronim</item>
+        <item>@font/alef</item>
+        <item>@font/almendra_sc</item>
+        <item>@font/andada</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/averia_libre_light</item>
+        <item>@font/cardo</item>
+        <item>@font/mandali</item>
+        <item>@font/montserrat</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/roboto_slab_thin</item>
+        <item>@font/sree_krushnadevaraya</item>
+    </array>
+</resources>

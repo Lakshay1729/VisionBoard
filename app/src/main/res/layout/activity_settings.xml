@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="?attr/backgroundcolor"
+    android:scrollingCache="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundcolor"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing_large">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:text="Settings"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="?attr/textColor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_middle">
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="60dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="Select Language"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/grey_90"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<View&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="@dimen/spacing_middle"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="English, US"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/colorPrimary" />&ndash;&gt;-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Set Dark Mode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="?attr/textColor"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:id="@+id/theme"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Dark or Light Theme"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="?attr/textColor" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Music off/on"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="?attr/textColor"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:id="@+id/muzic"
+
+                            app:thumbTint="@color/switch_color_primary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn Music on or off "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="?attr/textColor" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Enable Lock"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xxlarge"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enable pinlock"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="?attr/textColor" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/default_pin"
+                        android:text="Default Pin Set(1234)"/>
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        app:thumbTint="@color/switch_color_primary"
+                        />
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xxlarge"
+                    android:orientation="horizontal"
+                    android:id="@+id/pinlayout"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Change Pin for lock"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="?attr/textColor" />
+
+                    <ImageView
+                        android:id="@+id/setpin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="160dp"
+                        android:backgroundTint="@color/light_blue_700"
+                        android:foregroundTint="@color/light_blue_700"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pincode" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xxlarge"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:id="@+id/fingerlayout"
+                    android:paddingRight="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enable FingerPrint Lock"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="?attr/textColor" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/finger"
+                        app:thumbTint="@color/switch_color_primary" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Set List Layout"
+
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="?attr/textColor"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:id="@+id/layout"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Layout"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="?attr/textColor" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Set Reminder"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="?attr/textColor"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/timing"
+                            android:visibility="gone"
+                            android:textColor="?attr/textColor"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:id="@+id/reminder"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/adjust_time"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjust Timing of reminder"
+                        android:layout_marginTop="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="?attr/textColor" />
+
+                        <ImageView
+                            android:id="@+id/adjust"
+                            android:layout_width="29dp"
+                            android:layout_height="27dp"
+                            android:layout_marginStart="120dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/light_blue_700"
+                            android:foregroundTint="@color/light_blue_700"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_clock" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/reminder"-->
+                        <!--android:layout_marginLeft="130dp"-->
+                        <!--android:id="@+id/picker"-->
+
+                        <!--/>-->
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="?attr/dividercolor" />
+                </LinearLayout>
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="@dimen/spacing_xxlarge"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="New Deals &amp; Rewards"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="@color/grey_40" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<androidx.appcompat.widget.SwitchCompat-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="true"-->
+                        <!--app:thumbTint="@color/switch_color_primary" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/grey_10" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="@dimen/spacing_xxlarge"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Occasional promo"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="@color/grey_40" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<androidx.appcompat.widget.SwitchCompat-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="false"-->
+                        <!--app:thumbTint="@color/switch_color_primary" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/grey_10" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="@dimen/spacing_xxlarge"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Event &amp; Match"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="@color/grey_40" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<androidx.appcompat.widget.SwitchCompat-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="false"-->
+                        <!--app:thumbTint="@color/switch_color_primary" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="@dimen/spacing_middle"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/grey_10" />-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_middle"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="?attr/textColor"
+                    android:textStyle="bold" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="@dimen/spacing_xxlarge"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Ask a Question"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="?attr/textColor" />-->
+
+                <!--</LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/spacing_xxlarge"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:id="@+id/faq"
+                    android:paddingRight="@dimen/spacing_large">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F A Q"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="?attr/textColor" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?attr/selectableItemBackground"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:minHeight="@dimen/spacing_xxlarge"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/spacing_large"-->
+                    <!--android:paddingRight="@dimen/spacing_large">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Privacy Policy"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="?attr/textColor" />-->
+
+                <!--</LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/dividercolor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

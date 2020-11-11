@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="100dp"
+    android:id="@+id/rela"
+    style="@style/Dialog.Theme"
+
+    android:layout_gravity="center">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="Add New Category"
+    android:textFontWeight="6"
+    android:background="@color/blue_grey_600"
+    android:fontFamily="serif"
+
+    android:textAlignment="center"
+    android:textSize="20dp"
+    />
+     <EditText
+         android:id="@+id/edt"
+         android:layout_width="match_parent"
+         android:layout_height="48dp"
+         android:layout_marginTop="30dp"
+
+
+         android:fontFamily="serif"
+         android:gravity="bottom"
+         android:hint="Add Category"
+
+         android:paddingHorizontal="20dp"
+         android:textColorHint="@color/grey_10"
+         android:textFontWeight="6"
+         android:textSize="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinLockView">
+        <attr name="pinLength" format="integer" />
+        <attr name="keypadTextColor" format="color" />
+        <attr name="keypadTextSize" format="dimension" />
+        <attr name="keypadButtonSize" format="dimension" />
+        <attr name="keypadVerticalSpacing" format="dimension" />
+        <attr name="keypadHorizontalSpacing" format="dimension" />
+        <attr name="keypadButtonBackgroundDrawable" format="integer" />
+        <attr name="keypadDeleteButtonDrawable" format="integer" />
+        <attr name="keypadDeleteButtonSize" format="dimension" />
+        <attr name="keypadShowDeleteButton" format="boolean" />
+        <attr name="keypadDeleteButtonPressedColor" format="color" />
+
+        <attr name="dotEmptyBackground" format="reference" />
+        <attr name="dotFilledBackground" format="reference" />
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="indicatorType" format="enum">
+            <enum name="fixed" value="0" />
+            <enum name="fill" value="1" />
+            <enum name="fillWithAnimation" value="2" />
+        </attr>
+
+
+
+    </declare-styleable>
+    <declare-styleable name="Da">
+        <attr name="textColor" format="color"/>
+        <attr name="secondaryTextColor" format="color"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="backgroundcolor" format="color"/>
+        <attr name="iconPlaceholder" format="integer"/>
+        <attr name="cardBackground" format="color"></attr>
+        <attr name="toolbarColor" format="color"></attr>
+        <attr name="tintColor" format ="color"></attr>
+        <attr name="buttonColor" format="color"></attr>
+        <attr name="headerimage" format="reference"></attr>
+        <attr name="hintcolor" format="color"></attr>
+        <attr name="dividercolor" format="color"></attr>
+        <attr name="addpic" format="reference"></attr>
+        <attr name="add_expandable" format="reference"></attr>
+        <attr name="card_activity" format="color"></attr>
+    </declare-styleable>
+
+
+
+</resources>
